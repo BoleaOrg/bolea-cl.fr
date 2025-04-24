@@ -1,10 +1,33 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
+  <meta charset="UTF-8">
   <meta http-equiv="cache-control" content="no-cache" />
   <meta http-equiv="pragma" content="no-cache" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cr&#234;perie Louis</title>
+  <meta name="description" content="Cr&#234;perie Louis à Orgeval. Cr&#234;perie traditionnelle Bretonne proposant des Galettes et Cr&#234;pes faites maison ainsi que des salades, burgers artisanaux et frites maison, &agrave; d&eacute;guster sur place ou &agrave; emporter.">
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Cr&#234;perie Louis",
+      "description": "Cr&#234;perie Louis à Orgeval. Cr&#234;perie traditionnelle Bretonne proposant des Galettes et Cr&#234;pes faites maison ainsi que des salades, burgers artisanaux et frites maison.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cr&#234;perie Louis",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/louis_logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://creperielouis.fr"
+      }
+    }
+  </script>
   <style>
     body {
       margin: 0;
@@ -27,6 +50,11 @@
     .scrolling-image {
       height: auto;
       width: 100%;
+    }
+
+    .logo {
+      height: auto;
+      width: 75%;
     }
 
     .centered-button {
@@ -74,6 +102,10 @@
         width: 40px;
       }
 
+    .map{
+        width: 20px;
+      }
+	  
     /* Larger button on mobile devices */
     @media (max-width: 768px) {
       .centered-button {
@@ -90,21 +122,27 @@
       .instagram{
         width: 10px;
       }
+
+      .map{
+        width: 10px;
+      }
     }
   </style>
 </head>
 <body>
+  <h1>Cr&#234;perie Louis</h1>
   <a href="https://creperie-louis.marketplace.dood.com/fr/shops/restaurant-tradi/creperie-louis" target="_blank"
-    class="centered-button">Commander Ici</a>
+    class="centered-button">Commander sur place ou &agrave; emporter</a>
   <div class="content">
-
-    <img src="/louis_logo.png" alt="Cr&#234;perie Louis Logo" class="scrolling-image">
-    <span class="centered-text">R&#233;servation &#224; : <a
-      href="mailto:creperielouis@gmail.com">creperielouis@gmail.com</a></span>
+    <img src="louis_logo.png" alt="Cr&#234;perie Louis Logo" class="logo">
       <br>
-    <span class="centered-text">Suivre sur : <a
-        href="https://www.instagram.com/mehdy_bsi/" target="_blank"><img src="insta_logo.png" class="instagram" style=""/>      </a></span>
-    <img src="/louis_menu.png" alt="Cr&#234;perie Louis Menu" class="scrolling-image">
+    <span class="centered-text">R&#233;servation &#224; : <a href="mailto:creperielouis@gmail.com">creperielouis@gmail.com</a></span>
+      <br>
+	  <img src="map.svg" class="map" /> <a href="https://maps.app.goo.gl/snyA3Lf5TDh2SPaA8" target="_blank">589 avenue Pasteur, 78630 Orgeval</a>
+	  <br>
+    <span class="centered-text">Suivre sur instagram : <a href="https://www.instagram.com/mehdy_bsi/" target="_blank"><img src="insta_logo.png" class="instagram" style=""/>      </a></span>
+	<br>
+    <img src="louis_menu.png" alt="Cr&#234;perie Louis Menu" class="scrolling-image">
   </div>
 
   <!-- Zenchef Widget SDK -->
