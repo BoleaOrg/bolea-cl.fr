@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Crêpe du bas -->
+  <ellipse cx="16" cy="26" rx="8" ry="2.2" fill="#e6b800" opacity="0.8"/>
+  <ellipse cx="16" cy="25" rx="8" ry="2.2" fill="#f4d03f"/>
+  
+  <!-- Crêpe du milieu -->
+  <ellipse cx="16" cy="22" rx="8" ry="2.2" fill="#e6b800" opacity="0.8"/>
+  <ellipse cx="16" cy="21" rx="8" ry="2.2" fill="#f7dc6f"/>
+  
+  <!-- Crêpe du haut -->
+  <ellipse cx="16" cy="18" rx="8" ry="2.2" fill="#e6b800" opacity="0.8"/>
+  <ellipse cx="16" cy="17" rx="8" ry="2.2" fill="#fff59d"/>
+  
+  <!-- Crêpe du sommet -->
+  <ellipse cx="16" cy="15" rx="8" ry="2.2" fill="#e6b800" opacity="0.8"/>
+  <ellipse cx="16" cy="14" rx="8" ry="2.2" fill="#f4d03f"/>
+  
+  <!-- Beurre qui fond sur le dessus -->
+  <ellipse cx="15" cy="12" rx="2" ry="1" fill="#fff3b8"/>
+  <ellipse cx="15" cy="11.5" rx="1.5" ry="0.8" fill="#fffde7"/>
+  
+  <!-- Détails de texture sur les crêpes -->
+  <circle cx="12" cy="25" r="0.3" fill="#e6b800" opacity="0.5"/>
+  <circle cx="19" cy="21" r="0.3" fill="#e6b800" opacity="0.5"/>
+  <circle cx="13" cy="17" r="0.2" fill="#e6b800" opacity="0.4"/>
+  <circle cx="18" cy="14" r="0.2" fill="#e6b800" opacity="0.4"/>
+  
+  <!-- Reflets pour le volume -->
+  <ellipse cx="14" cy="24.5" rx="3" ry="0.8" fill="#fff9c4" opacity="0.3"/>
+  <ellipse cx="14" cy="20.5" rx="3" ry="0.8" fill="#fff9c4" opacity="0.3"/>
+  <ellipse cx="14" cy="16.5" rx="3" ry="0.8" fill="#fff9c4" opacity="0.3"/>
+  <ellipse cx="14" cy="13.5" rx="3" ry="0.8" fill="#fff9c4" opacity="0.3"/>
+</svg>
