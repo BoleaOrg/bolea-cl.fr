@@ -628,7 +628,7 @@ body {
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 0.25rem 0.5rem;
+        padding: 0.25rem 1rem;
     }
     
     .nav-logo {
