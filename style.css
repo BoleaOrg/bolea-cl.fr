@@ -34,7 +34,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     z-index: 1000;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease;
     border-bottom: 1px solid rgba(62, 100, 178, 0.1);
 }
@@ -550,7 +550,7 @@ body {
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 0.75rem 1rem;
+        padding: 0.25rem 0.5rem;
     }
     
     .nav-logo {
