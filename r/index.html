@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cr&ecirc;perie Louis</title>
+	<meta name="description" content="La meilleure Cr&ecirc;perie de Sartrouville !">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script>
+		function showElement(id) {
+			var element = document.getElementById(id);
+			if (element !== null) {
+				element.style.display = 'block';
+			}
+		}
+		
+		function hideElement(id) {
+			var element = document.getElementById(id);
+			if (element !== null) {
+				element.style.display = 'none';
+			}
+		}
+	
+        window.onload = function () {			
+            var reviewBad = document.getElementById('review-bad');
+			if (reviewBad !== null) {
+				reviewBad.addEventListener('click', function () {
+					hideElement('form');
+					showElement('result-bad');
+				});
+			}
+            var reviewAverage = document.getElementById('review-average');
+			if (reviewAverage !== null) {
+				reviewAverage.addEventListener('click', function () {
+					hideElement('form');
+					showElement('result-average');
+				});
+			}
+            var reviewGood = document.getElementById('review-good');
+			if (reviewGood !== null) {
+				reviewGood.addEventListener('click', function () {
+					hideElement('form');
+					showElement('result-good');
+				});
+			}
+        };
+    </script>
+</head>
+<body>
+    <a id="profilePicture" href="/">
+        <img src="../creperielouis_logo.png" alt="Cr&ecirc;perie Louis Logo">
+    </a>
+
+    <div id="app" style="display:none">
+        Cr&ecirc;perie Louis
+    </div>
+
+    <div class="description">
+		<div id="form">
+			<p>Comment était votre commande ?</p>
+			<p>
+				<span><a id="review-bad" href="#"><img src="bad.png" width="80px" /></a></span>
+				<span><a id="review-average" href="#"><img src="average.png" width="80px" /></a></span>
+				<span><a id="review-good" href="#"><img src="good.png" width="80px" /></a></span>
+			</p>
+		</div>
+		<div id="result-bad" style="display:none;">
+			<p>Nous aurions aimé être à la hauteur de vos attentes</p>
+			<p>Comment pouvons-nous vous aider et nous améliorer ?</p>
+			<p><i>Un probl&egrave;me avec votre commande ? Envoyez-nous un e-mail &agrave; <a href="mailto:bonjour@onylab.com">bonjour@onylab.com</a>.</i></p>
+		</div>
+		<div id="result-average" style="display:none;">
+			<p>Nous aurions aimé faire mieux</p>
+			<p>Comment pouvons-nous être à la hauteur de 100% de vos attentes ?</p>
+			<p><i>Dites-nous en plus par e-mail &agrave; <a href="mailto:bonjour@onylab.com">bonjour@onylab.com</a>.</i></p>
+		</div>
+		<div id="result-good" style="display:none;">
+			<p>Merci</p>
+			<p>⭐⭐⭐⭐⭐</p>
+			<div class="links">		
+				<a id="link-gmb" class="link" href="" target="_blank">
+					<i>&nbsp;</i>Partagez votre avis sur Google
+				</a>
+			</div>
+		</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="links">
+        <a class="link" href="mail:reclamation@onylab.com"><i class="fas fa-envelope">&nbsp;</i>Contactez-nous</a>
+    </div>
+
+    <div id="hashtag">
+        #CreperieLouis
+    </div>
+</body>
+</html>
