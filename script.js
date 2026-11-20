@@ -1,48 +1,34 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+// Smooth scrolling is handled in CSS (scroll-behavior + scroll-margin-top).
 
-// Mobile menu toggle
+const navbar = document.getElementById('navbar');
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 
-menuToggle.addEventListener('click', function() {
-    this.classList.toggle('active');
-    navMenu.classList.toggle('active');
+function setMenuOpen(open) {
+    menuToggle.classList.toggle('active', open);
+    navMenu.classList.toggle('active', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+}
+
+menuToggle.addEventListener('click', () => {
+    setMenuOpen(!navMenu.classList.contains('active'));
 });
 
-// Close mobile menu when clicking on a link
+// Close the mobile menu after choosing a link, clicking outside, or pressing Escape
 document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
-    link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
+    link.addEventListener('click', () => setMenuOpen(false));
 });
 
-// Navbar scroll effect
-window.addEventListener('scroll', function() {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+document.addEventListener('click', e => {
+    if (!e.target.closest('.navbar')) setMenuOpen(false);
 });
 
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(e) {
-    if (!e.target.closest('.navbar')) {
-        menuToggle.classList.remove('active');
-        navMenu.classList.remove('active');
-    }
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') setMenuOpen(false);
 });
+
+// Navbar shadow once the page is scrolled
+const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 20);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
