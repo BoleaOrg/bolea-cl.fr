@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Découvrez la Crêperie Louis à Orgeval. Crêpes artisanales, galettes bretonnes et spécialités sucrées dans une ambiance chaleureuse. Commandez en ligne ou réservez votre table.">
-    <meta name="keywords" content="crêperie, Orgeval, crêpes, galettes, burger, restaurant, cuisine bretonne, sur place, à emporter">
     <meta name="robots" content="index, follow">
-    
+
     <title>Crêperie Louis à Orgeval | Crêpes Artisanales & Galettes Bretonnes</title>
-    
+    <link rel="canonical" href="https://creperielouis.fr/">
+
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -17,17 +17,21 @@
     <link rel="manifest" href="/site.webmanifest" />
     
     <!-- Social -->
-    <meta property="og:type" content="restaurant">
-    <meta property="og:url" content="https://creperielouis.fr">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://creperielouis.fr/">
+    <meta property="og:site_name" content="Cr&ecirc;perie Louis">
     <meta property="og:title" content="Cr&ecirc;perie Louis - Restaurant à Orgeval">
     <meta property="og:description" content="Restaurant Crêperie Louis, crêperie moderne à Orgeval. Découvrez nos délicieuses crêpes et galettes bretonnes.">
     <meta property="og:image" content="https://creperielouis.fr/og_logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo Cr&ecirc;perie Louis">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="creperielouis.fr">
-    <meta property="twitter:url" content="https://creperielouis.fr">
+    <meta property="twitter:url" content="https://creperielouis.fr/">
     <meta name="twitter:title" content="Cr&ecirc;perie Louis - Restaurant à Orgeval">
     <meta name="twitter:description" content="Restaurant Crêperie Louis, crêperie moderne à Orgeval. Découvrez nos délicieuses crêpes et galettes bretonnes.">
     <meta name="twitter:image" content="https://creperielouis.fr/og_logo.png">
@@ -37,28 +41,76 @@
     {
         "@context": "https://schema.org",
         "@type": "Restaurant",
+        "@id": "https://creperielouis.fr/#restaurant",
         "name": "Crêperie Louis",
-        "description": "Restaurant spécialisé dans les crêpes artisanales et galettes bretonnes",
+        "url": "https://creperielouis.fr/",
+        "description": "Crêperie artisanale à Orgeval : galettes de sarrasin, crêpes sucrées, burgers maison, brunch et salades. Sur place ou à emporter.",
+        "logo": "https://creperielouis.fr/creperielouis_logo.png",
+        "image": [
+            "https://creperielouis.fr/og_logo.png",
+            "https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3292.jpg",
+            "https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3420.jpg",
+            "https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3575.jpg"
+        ],
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "589 avenue Pasteur",
             "addressLocality": "Orgeval",
             "postalCode": "78630",
+            "addressRegion": "Île-de-France",
             "addressCountry": "FR"
         },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 48.927731,
+            "longitude": 1.9800801
+        },
+        "hasMap": "https://maps.app.goo.gl/snyA3Lf5TDh2SPaA8",
         "telephone": "+33951242213",
         "email": "creperielouis@gmail.com",
-        "servesCuisine": "Française, Bretonne",
-        "priceRange": "€"
+        "servesCuisine": ["Crêperie", "Bretonne", "Française", "Burgers", "Brunch"],
+        "priceRange": "€",
+        "hasMenu": "https://creperielouis.fr/#menu",
+        "acceptsReservations": true,
+        "areaServed": ["Orgeval", "Poissy", "Carrières-sous-Poissy", "Villennes-sur-Seine", "Saint-Germain-en-Laye"],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "12:00",
+                "closes": "14:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+                "opens": "12:00",
+                "closes": "15:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+                "opens": "19:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "19:00",
+                "closes": "22:30"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/creperielouis78/"
+        ]
     }
     </script>
-    <link href="style.css?v=1" rel="stylesheet">
+    <link href="style.css?v=2" rel="stylesheet">
 </head>
 <body>
     <!-- Fixed Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo"><img src="/creperielouis_logo_horizontal.png" alt="Logo Cr&ecirc;perie Louis" style="width:150px" /></a>
+            <a href="#hero" class="nav-logo"><img src="/creperielouis_logo_horizontal.png" alt="Logo Cr&ecirc;perie Louis" width="150" height="46" style="width:150px;height:auto" /></a>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#menu" class="nav-link">Carte</a></li>
                 <li><a href="#picture" class="nav-link">Restaurant</a></li>
@@ -66,7 +118,7 @@
                 <li><a href="#info" class="nav-link">Contact</a></li>
                 <li><a href="https://goorder.cc/1ek5y-0/creperie-louis-orgeval?pickup" class="nav-cta">Commander</a></li>
             </ul>
-            <button class="menu-toggle" id="menuToggle">
+            <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-controls="navMenu">
                 <div class="hamburger"></div>
             </button>
         </div>
@@ -76,10 +128,12 @@
     <section class="hero" id="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="logo">Crêperie Louis</h1>
-                <p class="tagline">L'art de la crêpe bretonne à Orgeval</p>
+                <h1 class="hero-title">
+                    <span class="logo">Crêperie Louis</span>
+                    <span class="tagline">L'art de la crêpe bretonne à Orgeval</span>
+                </h1>
                 <p class="description">
-                    Découvrez nos crêpes artisanales et galettes traditionnelles dans une atmosphère chaleureuse. 
+                    Découvrez nos crêpes artisanales et galettes traditionnelles dans une atmosphère chaleureuse.
                     Chaque création est préparée avec des ingrédients frais selon les recettes authentiques de Bretagne.
                 </p>
                 <a href="https://goorder.cc/1ek5y-0/creperie-louis-orgeval?pickup" class="cta-button">
@@ -115,7 +169,87 @@
         <div class="menu-container">
             <h2 class="section-title">Notre Carte</h2>
             <p class="section-subtitle">Découvrez nos créations authentiques</p>
-            <a href="/louis_menu.png?v=2" target="_blank"><img src="/louis_menu.png" style="width:100%"></a>
+            <a href="/louis_menu.webp?v=3" target="_blank" rel="noopener">
+                <img src="/louis_menu.webp?v=3" alt="Carte de la Crêperie Louis à Orgeval : galettes, crêpes, burgers, brunch, salades, glaces et boissons" width="1200" height="11940" loading="lazy" decoding="async" style="width:100%;height:auto">
+            </a>
+
+            <details class="menu-text">
+                <summary>Voir la carte en version texte</summary>
+
+                <h3>Galettes traditionnelles <span class="menu-price">tarif unique 7,9 €</span></h3>
+                <ul>
+                    <li><strong>Duo</strong> : jambon, emmental</li>
+                    <li><strong>Complète</strong> : jambon, œuf, emmental</li>
+                    <li><strong>Forestière</strong> : champignons bruns poêlés au beurre, jambon, œuf, emmental</li>
+                    <li><strong>Ségur</strong> : chèvre, miel, lardons, emmental, noix</li>
+                </ul>
+
+                <h3>Galettes spéciales <span class="menu-price">tarif unique 7,9 €</span></h3>
+                <ul>
+                    <li><strong>Veggie</strong> : champignons bruns, tomates, oignons confits, pommes de terre confites, emmental</li>
+                    <li><strong>Belle de Morteau</strong> : saucisse de Morteau IGP, reblochon de Savoie AOP, pommes de terre confites, oignons confits, emmental</li>
+                    <li><strong>Poulet estragon</strong> : poulet cuit au four, sauce estragon à la crème, champignons, pommes de terre confites, emmental</li>
+                    <li><strong>Poulet Boursin</strong> : poulet frais cuit au four, sauce crème Boursin, pommes de terre confites, emmental</li>
+                    <li><strong>Courchevel</strong> : raclette de Savoie AOP, pommes de terre confites, jambon de pays 16 mois, oignons confits, œuf, emmental</li>
+                    <li><strong>Quatre fromages</strong> : chèvre, reblochon de Savoie AOP, bleu d'Auvergne AOP, emmental</li>
+                    <li><strong>Guéméné</strong> : andouille de Guémené, sauce moutarde à l'ancienne, pommes de terre confites, emmental</li>
+                    <li><strong>Nordique</strong> : saumon fumé, crème fraîche, ciboulette, pommes de terre confites, emmental</li>
+                </ul>
+
+                <h3>Burgers artisanaux et frites maison <span class="menu-price">tarif unique 7,9 €</span></h3>
+                <p>Pains buns faits sur place chaque jour, steak haché frais (110 g).</p>
+                <ul>
+                    <li><strong>Burger cheddar</strong>, <strong>Chicken burger</strong>, <strong>Fish burger</strong></li>
+                    <li><strong>Burger raclette</strong> : raclette de Savoie AOP</li>
+                    <li><strong>Burger cheddar bacon</strong></li>
+                    <li><strong>Burger montagnard</strong> : raclette de Savoie AOP, bacon, oignons confits</li>
+                    <li><strong>Burger d'Aveyron</strong> : bleu d'Auvergne AOP</li>
+                </ul>
+
+                <h3>Salades composées <span class="menu-price">tarif unique 7,9 €</span></h3>
+                <ul>
+                    <li><strong>Salade de chèvre chaud</strong>, <strong>Salade auvergnate</strong>, <strong>Salade Caesar</strong>, <strong>Salade norvégienne</strong></li>
+                </ul>
+
+                <h3>À partager <span class="menu-price">tarif unique 7,9 €</span></h3>
+                <ul>
+                    <li><strong>Ardoise de fromages</strong>, <strong>Ardoise de charcuterie</strong>, <strong>Ardoise mixte</strong>, <strong>Ardoise de tapas</strong></li>
+                </ul>
+
+                <h3>Brunch : pancakes</h3>
+                <ul>
+                    <li>Pancakes salés (7,9 €) : <strong>Bûcheron</strong>, <strong>New-Yorkais</strong>, <strong>Écossais</strong></li>
+                    <li>Pancakes sucrés (2,9 €) : <strong>Sweet Banana</strong>, <strong>Savoury Fruities</strong>, <strong>Apple Speculoos</strong></li>
+                </ul>
+
+                <h3>Crêpes sucrées <span class="menu-price">tarif unique 2,9 €</span></h3>
+                <ul>
+                    <li>Beurre sucre, citron pressé, confiture de fraises ou d'abricots, chocolat maison ou Nutella®, miel, caramel au beurre salé maison, spéculoos, crème de marron, frangipane maison, compote de pomme maison, chocolat blanc</li>
+                    <li><strong>Mi-choco</strong> et <strong>Mi-cuit maison</strong></li>
+                </ul>
+
+                <h3>Crêpes flambées <span class="menu-price">tarif unique 2,9 €</span></h3>
+                <ul>
+                    <li><strong>Suzette</strong> (Grand Marnier), <strong>Martiniquaise</strong> (rhum ambré), <strong>Plougastel</strong> (fraises, Grand Marnier), <strong>Saint-Louis</strong> (poire, chocolat, noyau de Poissy)</li>
+                </ul>
+
+                <h3>Glaces et cafés gourmands <span class="menu-price">tarif unique 2,9 €</span></h3>
+                <ul>
+                    <li>Boules de glace, Dame blanche, Belle Hélène, Fruitière, Colonel, Banana split</li>
+                    <li>Duo et trio café gourmand avec mini-crêpes</li>
+                </ul>
+
+                <h3>Menu enfant <span class="menu-price">6,9 €</span></h3>
+                <p>Galette emmental jambon, poulet ou œuf, une boisson et une crêpe sucrée ou une boule de glace.</p>
+
+                <h3>Boissons</h3>
+                <ul>
+                    <li>Cidres bouchés du Val de Rance (doux ou brut) et vins au verre : 2,9 €</li>
+                    <li>Bières, cocktails et mocktails : 2,9 €</li>
+                    <li>Apéritifs et digestifs : 2,4 €</li>
+                    <li>Boissons fraîches et boissons chaudes : 1,8 €</li>
+                </ul>
+            </details>
         </div>
     </section>
 
@@ -127,7 +261,7 @@
                     Brunch
                 </h2>
                 <div class="picture-item">
-                    <img src="https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3292.jpg" />
+                    <img src="https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3292.jpg" alt="Brunch avec pancakes salés à la Crêperie Louis, Orgeval" width="1080" height="1620" loading="lazy" decoding="async" />
                 </div>
             </div>
 
@@ -136,7 +270,7 @@
                     Crêpes et Pancakes
                 </h2>
                 <div class="picture-item">
-                    <img src="https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3420.jpg" />
+                    <img src="https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3420.jpg" alt="Crêpes sucrées et pancakes maison de la Crêperie Louis à Orgeval" width="1080" height="1620" loading="lazy" decoding="async" />
                 </div>
             </div>
 
@@ -145,7 +279,7 @@
                     Nos Salades
                 </h2>
                 <div class="picture-item">
-                    <img src="https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3575.jpg" />
+                    <img src="https://cdn.hey.onylab.com/image/product/creperielouis/menu/w1080/IMG_3575.jpg" alt="Salade composée de la Crêperie Louis, restaurant à Orgeval" width="1080" height="1620" loading="lazy" decoding="async" />
                 </div>
             </div>
         </div>
@@ -176,21 +310,6 @@
                     </div>
                 </div>
             </div>
-            <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "LocalBusiness",
-                "name": "Crêperie Louis",
-                "url": "https://creperielouis.fr",
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.5",
-                    "bestRating": "5",
-                    "worstRating": "1",
-                    "ratingCount": "1414"
-                }
-            }
-            </script>
         </div>
     </section>
 
@@ -277,12 +396,11 @@
                     </svg>
                 </a>
             </div>
-            <p class="footer-text">© 2025 Crêperie Louis - Tous droits réservés<br><a href="https://onylab.com" title="Applications pour les restaurants" style="color:white">Made By OnyLab.com</a></p>
-        
-            <div style="color:black">
-                Crêperie artisanale, bar et café au centre d'Orgeval pour manger sur place ou à emporter.<br>
-                Orgeval, Poissy, Carrière-sous-Poissy
-            </div>
+            <p class="footer-about">
+                Crêperie artisanale, bar et café au centre d'Orgeval (78630) pour manger sur place ou à emporter.<br>
+                À deux pas de Poissy, Carrières-sous-Poissy, Villennes-sur-Seine et Saint-Germain-en-Laye.
+            </p>
+            <p class="footer-text">© 2026 Crêperie Louis - Tous droits réservés<br><a href="https://onylab.com" title="Applications pour les restaurants" style="color:white">Made By OnyLab.com</a></p>
         </div>
     </footer>
 

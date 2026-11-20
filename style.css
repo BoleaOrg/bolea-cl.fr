@@ -567,6 +567,64 @@ body {
     font-size: 0.9rem;
 }
 
+.footer-about {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero title (h1 = nom + accroche) */
+.hero-title {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+.hero-title .logo,
+.hero-title .tagline {
+    display: block;
+}
+
+/* Carte en version texte */
+.menu-text {
+    margin-top: 2rem;
+    text-align: left;
+    background: white;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.menu-text summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--bleu-fonce);
+    text-align: center;
+}
+
+.menu-text h3 {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.15rem;
+    color: var(--noir-doux);
+}
+
+.menu-text .menu-price {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--cyan-soutenu);
+    white-space: nowrap;
+}
+
+.menu-text ul {
+    padding-left: 1.2rem;
+}
+
+.menu-text li,
+.menu-text p {
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
