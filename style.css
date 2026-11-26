@@ -284,11 +284,6 @@ section[id] { scroll-margin-top: var(--nav-h); }
     color: rgba(255, 255, 255, 0.9);
 }
 
-.hero-prices {
-    margin-top: 1rem;
-    font-weight: 600;
-}
-
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -342,10 +337,6 @@ section[id] { scroll-margin-top: var(--nav-h); }
 }
 
 .board-cat h3 {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
     padding-bottom: 0.5rem;
     margin-bottom: 0.9rem;
     border-bottom: 2px solid var(--cat);
@@ -354,13 +345,6 @@ section[id] { scroll-margin-top: var(--nav-h); }
     font-weight: 700;
     font-size: clamp(1.6rem, 2.6vw, 2rem);
     line-height: 1.05;
-}
-
-.board-price {
-    font-weight: 800;
-    font-size: 1.15em;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
 }
 
 .board-cat ul { list-style: none; }
@@ -385,20 +369,6 @@ section[id] { scroll-margin-top: var(--nav-h); }
     margin-bottom: 0.75rem;
     color: var(--craie-douce);
     font-size: 1rem;
-}
-
-.board-footer {
-    margin-top: 0.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--ardoise-claire);
-}
-
-.board-footer a {
-    color: var(--craie);
-    font-family: var(--font-condensed);
-    font-weight: 600;
-    font-size: 1.15rem;
-    text-underline-offset: 4px;
 }
 
 /* ---------- Le restaurant ---------- */
